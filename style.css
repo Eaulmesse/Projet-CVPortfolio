@@ -384,3 +384,50 @@ button h5{
     text-align: justify;
     line-height: 30px; 
 }
+
+.blocContact{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact{
+    display: flex;
+    background-color: var(--primary-color);
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    
+}
+
+.contact h5{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contact #mail{
+    font-size: 15px;
+}
+
+.contact #localisation{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blocFooter{
+    display: flex;
+    justify-content: center;
+}
+
+.blocFooter img{
+    width: 50px;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+#anchor{
+    margin-top: 10px;
+    width: 32px;
+}
