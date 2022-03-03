@@ -18,7 +18,7 @@ window.onclick = function(event) {
 // HTML MODAL
 var modalHTML = document.getElementById("myModalHTML");
 var btnHTML = document.getElementById("myBtnHTML");
-var spanHTML = document.getElementsByClassName("close")[0];
+var spanHTML = document.getElementsByClassName("closeHTML")[0];
 btnHTML.onclick = function() {
   modalHTML.style.display = "block";
 }
@@ -35,7 +35,7 @@ window.onclick = function(event) {
 // HTML CSS
 var modalCSS = document.getElementById("myModalCSS");
 var btnCSS = document.getElementById("myBtnCSS");
-var spanCSS = document.getElementsByClassName("close")[0];
+var spanCSS = document.getElementsByClassName("closeCSS")[0];
 btnCSS.onclick = function() {
   modalCSS.style.display = "block";
 }
@@ -52,7 +52,7 @@ window.onclick = function(event) {
 // HTML WP
 var modalWP = document.getElementById("myModalWP");
 var btnWP = document.getElementById("myBtnWP");
-var spanWP = document.getElementsByClassName("close")[0];
+var spanWP = document.getElementsByClassName("closeWP")[0];
 btnWP.onclick = function() {
   modalWP.style.display = "block";
 }

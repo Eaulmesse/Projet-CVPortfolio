@@ -17,6 +17,7 @@ body{
 
 /* Navbar */
 
+
 header{
     padding: 3%;
     background-color: var(--primary-color);
@@ -246,6 +247,44 @@ li a{
     cursor: pointer;
 }
 
+.closeHTML {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.closeHTML:hover,
+.closeHTML:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeCSS {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.closeCSS:hover,
+.closeCSS:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeWP {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.closeWP:hover,
+.closeWP:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 .icon{
@@ -369,6 +408,7 @@ button h5{
     margin-left: auto;
     width: 85%;
     display: flex;
+    padding-bottom: 5%;
 }
 
 .blocActivity2 img{
