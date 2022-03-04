@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div id="anchorLink"></div>
+    <div class="scrollbar"></div>
+    <div class="clickScrollbar"></div>
+
     <header>
         <div id="navbar">
             <div id="logoTitle">
@@ -15,10 +19,10 @@
                 <h1 id="titleNavbar">Théo GUERIN - Developpeur Web </h1>
             </div>
             <ul id="navUl">
-                <li><a href="#home">Compétences</a></li>
-                <li><a href="#news">Projets</a></li>
-                <li><a href="#contact">Parcours</a></li>
-                <li><a href="#about">Activités</a></li>
+                <li><a href="#competenceAnchor">Compétences</a></li>
+                <li><a href="#projectAnchor">Projets</a></li>
+                <li><a href="#parcoursAnchor">Parcours</a></li>
+                <li><a href="#activityAnchor">Activités</a></li>
               </ul>
         </div>
 
@@ -57,7 +61,7 @@
 
     <main>
         <div class="sectionSkills">
-            <div class="skills">
+            <div id="competenceAnchor" class="skills">
                 <!-- JS Button -->
                 <button id="myBtnJS"><img src="./img/jsb.png" alt="" class="icon"><h5>Javascript</h5></button>
                 <div id="myModalJS" class="modalJS">
@@ -103,7 +107,7 @@
 
         </div>    
 
-        <div class="sectionProject">
+        <div id="projectAnchor" class="sectionProject">
             <div class="bloc1">
                 <a href="https://github.com/Eaulmesse/js-numberfinder" target="_blank"><img src="./img/numberfinder.png" alt=""></a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempore ad asperiores cupiditate, veritatis id. Culpa magnam magni nihil repellendus reiciendis quisquam odio laboriosam blanditiis odit totam! Dolorem, quisquam praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius quos porro, in delectus aperiam sunt sed modi! Error et temporibus fugiat earum nam tempore sint repellendus deleniti, corrupti quia.</p>
@@ -116,10 +120,10 @@
             <div class="bloc1">
                 <a href="https://theog.promo-110.codeur.online/stalkeyes.js/" target="_blank"><img src="./img/eye.png" alt=""></a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempore ad asperiores cupiditate, veritatis id. Culpa magnam magni nihil repellendus reiciendis quisquam odio laboriosam blanditiis odit totam! Dolorem, quisquam praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius quos porro, in delectus aperiam sunt sed modi! Error et temporibus fugiat earum nam tempore sint repellendus deleniti, corrupti quia.</p>
-                <a href="https://theog.promo-110.codeur.online/Difference-game/" target="_blank"><img src="./img/difference.png" alt=""></a>
+                <a href="https://theog.promo-110.codeur.online/Difference-game/" target="_blank"><img id="borderDiff" src="./img/difference.png" alt=""></a>
         </div>
 
-        <div class="sectionSkills">
+        <div id="parcoursAnchor" class="sectionSkills">
             <div class="blocMap">
                 <div class="blocText">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ut culpa, distinctio iste sed, soluta quidem nisi assumenda recusandae eos officia possimus. Tempora voluptatum perferendis voluptatem maxime illum odit aspernatur?
@@ -142,7 +146,7 @@
             </div>
         </div>
 
-        <div class="sectionProject">
+        <div id="activityAnchor" class="sectionProject">
             <div class="blocActivity">
                 <img src="./img/elens.jpg" alt="">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis commodi non ipsum porro est corrupti iste, magni consequatur vel excepturi doloribus optio quisquam aperiam a accusantium sint perspiciatis et quia.
@@ -195,7 +199,7 @@
         <div class="sectionProject">
             <div class="blocFooter">
                 <a href="https://github.com/Eaulmesse" target="_blank"><img src="./img/githubb.png" alt=""></a>
-                <a href=""><img id="anchor" src="./img/arrowUp.png" alt=""></a>
+                <a href="#anchorLink"><img id="anchor" src="./img/arrowUp.png" alt=""></a>
                 <a href="https://www.linkedin.com/in/guerin-theo/" target="_blank"><img src="./img/linkedInb.png" alt=""></a>
             </div>
             <div class="textFooter">
