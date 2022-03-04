@@ -66,3 +66,12 @@ window.onclick = function(event) {
     modalWP.style.display = "none";
   }
 }
+
+const txtAnim = document.getElementById('textJs');
+
+new Typewriter(txtAnim, {})
+.typeString('"Bienvenue sur mon CV')
+.pauseFor(300)
+.typeString('<strong>, Dev Web Junior" </strong>')
+.pause(1000)
+.start()
