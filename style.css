@@ -2,13 +2,27 @@
     --primary-color: #121212;
     --secondary-color:#1f1e1e ;
     --font-color: #ffff;
+    --clr-neutral-900: hsl(207, 19%, 9%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-accent-400: hsl(0, 0%, 100%);
 }
 
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 /* Contenue */
 
 
 body{
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.6;
+    background: var(--clr-neutral-900);
+    padding-right: 15em;
     padding: 0;
     margin: 0;
     color: #ffff;
@@ -190,6 +204,20 @@ li a{
     padding-bottom: 5%;
 }
 
+.project{
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-top: 500px;
+    width: 100%;
+}
+
+.square {
+    width: 500px;
+    height: 500px;
+    background-color: var(--secondary-color);
+}
+
 /* MODALS JS */
 
 #borderDiff{
@@ -356,6 +384,7 @@ li a{
 .skills button:hover{
     background-color: rgb(59, 59, 59);
     transition: 0.5s;
+    transform: scale(1.5);
 }
 
 button h5{
@@ -380,11 +409,92 @@ button h5{
 
 /* PROJECT */   
 
+
+
+
+
 .sectionProject{
     background-color: var(--primary-color);
 }
 
-.bloc1{
+#cardFlex {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.card {
+    color: var(--clr-neutral-100);
+    background-image: url(./img/fitness.jpg);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+ 
+.card:hover{
+    transform: scale(1.05);
+}
+ 
+.card:hover .cardTitle::after{
+    transform: scaleX(1);
+}
+ 
+.card:hover .cardContent{
+    transform: translateY(0);
+}
+ 
+.cardContent{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.3) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+}
+ 
+.cardTitle{
+    position: relative;
+}
+ 
+.cardTitle::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(var(--padding)* -1);
+    bottom: 0;
+    width: calc(100% + var(--padding));
+    background: var(--clr-accent-400);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+ 
+.cardBody {
+    color: rgb(255 255 255 / 0.8);
+}
+ 
+.button{
+    cursor: pointer;
+    /* display: inline; */
+    text-decoration: none;
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-accent-400);
+    padding: 0.5em 1.25em;
+    border-radius: 0.25em;
+}
+ 
+.button:hover,
+.button:focus{
+    background-color: rgb(108, 108, 245);
+ 
+}
+
+/* .bloc1{
     margin-left: auto;
     margin-right: auto;
     padding-top: 5%;
@@ -397,15 +507,15 @@ button h5{
 .bloc1 img{
     width: 100%;
     height: auto;
-}
+} */
 
-.bloc1 p{
+/* .bloc1 p{
     padding: 1%;
     margin-left: auto;
     margin-right: auto;
     line-height: 30px;
     text-align: justify;
-}
+} */
 
 .blocMap{
     padding-top: 5%;
@@ -413,11 +523,14 @@ button h5{
 }
 
 .blocMap iframe{
-    margin-left: 10%;
+    width: 30%;
+    padding-right: 10%;
+    padding-left: 10%;
+    display: block;
 }
 
 .blocText{
-    width: 35%;
+    width: 50%;
     margin-left: 8%;
     text-align: justify;
     line-height: 30px;
@@ -524,4 +637,171 @@ button h5{
 #anchor:hover{
     width: 70px;
     transition: 0.5s;
+}
+
+@media (max-width: 1024px) {  
+    .blocMap{
+        display: block;
+    }
+
+    .blocMap iframe{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    
+    .blocText{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+}
+
+
+@media (max-width: 992px) {  
+
+    #titleNavbar{
+        margin-left: 1%;
+        display: inline-block;
+        padding-left: 70px;
+        font-size: 25px;
+    }
+
+    #logoTitle img{
+        left: 20px;
+        top: 10px;
+    }
+
+    #banniere{
+        display: block;
+    }
+
+    #logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+    }
+
+    #imgBanniere{
+        width: 90%;
+        height: auto;
+        margin-left: 1%;
+        margin-top: 5%;
+    }
+
+    #pBanniere{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #pBanniere img{
+        margin-top: 5%;
+        margin-left: 20%;
+        transition: 0.5s;
+    }
+
+    /* .blocMap iframe{
+        margin-right: 5%;
+    } */
+
+    .bloc1{
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 70%;
+        display: block;
+    }
+    
+    .blocActivity{
+        padding-top: 5%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 85%;
+        display: block;
+    }
+
+    .blocActivity img{
+        margin-left: 10%;
+        width: 80%;
+        height: 20%;
+    }
+
+    .blocActivity p{
+        width: 70%;
+        margin-right: 0;
+        text-align: center;
+        text-align: justify;
+        line-height: 30px; 
+    }
+
+    .blocActivity2{
+        padding-top: 5%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 85%;
+        display: block;
+    }
+
+    .blocActivity2 img{
+        margin-left: 10%;
+        width: 80%;
+        height: 20%;
+    }
+
+    .blocActivity2 p{
+        width: 70%;
+        margin-left: 15%;
+        text-align: center;
+        text-align: justify;
+        line-height: 30px; 
+    }
+}
+
+
+
+@media (max-width: 768px) { 
+    #logoTitle img{
+        position: absolute;
+        left: 20px;
+        margin-top: 20px;
+    }
+
+    #navUl{
+        display: none;
+    }
+
+    
+    
+}
+
+@media (max-width: 576px) {
+    
+    
+
+    .skills{
+        display: block;
+    }
+
+    .skills button{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+
+    .blocContact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
 }
