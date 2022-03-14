@@ -71,7 +71,7 @@ header{
 #logoTitle img{
     position: absolute;
     left: 40px;
-    margin-top: 20px;
+    margin-top: 2%;
 }
 
 #titleNavbar{
@@ -161,13 +161,16 @@ li a{
     margin-right: auto;
 }
 
-#pBanniere img{
-    width: 64px;
+#linkBanniere{
+    display: flex;
+    justify-content: space-around;
     margin-top: 5%;
-    margin-left:27%;
     transition: 0.5s;
 }
 
+#linkBanniere img{
+    width: 64px;
+}
 #pBanniere img:hover{
     transform: scale(2);
     transition: 0.5s;
@@ -417,34 +420,105 @@ button h5{
     background-color: var(--primary-color);
 }
 
-#cardFlex {
+#projectAnchor {
+    display: flex;
+    justify-content: space-evenly;
     padding-top: 3%;
     padding-bottom: 3%;
 }
 
-.card {
+.card1 {
     color: var(--clr-neutral-100);
-    background-image: url(./img/fitness.jpg);
+    background-color: #2B2B2B;
     background-size: cover;
-    padding: 10rem 0 0;
-    max-width: 35ch;
+    max-width: 20%;
+    height: auto;
     border-radius: 0.5rem;
     overflow: hidden;
     transition: transform 500ms ease;
 }
- 
-.card:hover{
+
+.card2 {
+    color: var(--clr-neutral-100);
+    background-color: #2B2B2B;
+    background-size: cover;
+    max-width: 20%;
+    height: auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.card3 {
+    color: var(--clr-neutral-100);
+    background-color: #2B2B2B;
+    background-size: cover;
+    max-width: 20%;
+    height: auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.card4 {
+    color: var(--clr-neutral-100);
+    background-color: #2B2B2B;
+    background-size: cover;
+    max-width: 20%;
+    height: auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.card1:hover{
     transform: scale(1.05);
 }
- 
-.card:hover .cardTitle::after{
+
+.card1:hover .cardTitle::after{
     transform: scaleX(1);
 }
- 
-.card:hover .cardContent{
+
+.card1:hover .cardContent{
     transform: translateY(0);
 }
- 
+
+.card3:hover{
+    transform: scale(1.05);
+}
+
+.card3:hover .cardTitle::after{
+    transform: scaleX(1);
+}
+
+.card3:hover .cardContent{
+    transform: translateY(0);
+}
+
+.card2:hover{
+    transform: scale(1.05);
+}
+
+.card2:hover .cardTitle::after{
+    transform: scaleX(1);
+}
+
+.card2:hover .cardContent{
+    transform: translateY(0);
+}
+
+.card4:hover{
+    transform: scale(1.05);
+}
+
+.card4:hover .cardTitle::after{
+    transform: scaleX(1);
+}
+
+.card4:hover .cardContent{
+    transform: translateY(0);
+}
+
 .cardContent{
     --padding: 1.5rem;
     padding: var(--padding);
@@ -456,11 +530,11 @@ button h5{
     transform: translateY(70%);
     transition: transform 500ms ease;
 }
- 
+
 .cardTitle{
     position: relative;
 }
- 
+px
 .cardTitle::after{
     content: "";
     position: absolute;
@@ -473,26 +547,27 @@ button h5{
     transform-origin: left;
     transition: transform 500ms ease;
 }
- 
+
 .cardBody {
     color: rgb(255 255 255 / 0.8);
 }
- 
+
 .button{
     cursor: pointer;
-    /* display: inline; */
+    display: inline;
     text-decoration: none;
     color: var(--clr-neutral-900);
     background-color: var(--clr-accent-400);
     padding: 0.5em 1.25em;
     border-radius: 0.25em;
 }
- 
+
 .button:hover,
 .button:focus{
-    background-color: rgb(108, 108, 245);
- 
+    background-color: var(--clr-neutral-100);
+
 }
+
 
 /* .bloc1{
     margin-left: auto;
@@ -549,6 +624,7 @@ button h5{
     margin-bottom: auto;
     width: 40%;
     height: 20%;
+    border-radius: 8px;
 }
 
 .blocActivity p{
@@ -572,6 +648,7 @@ button h5{
     height: 20%;
     margin-top: auto;
     margin-bottom: auto;
+    border-radius: 8px;
 }
 
 .blocActivity2 p{
@@ -624,12 +701,15 @@ button h5{
 
 .blocFooter img{
     width: 50px;
-    margin-left: 50px;
+    padding-left: auto;
     padding: 20px;
+    padding-right: auto;
 }
 
 #anchor{
     /* margin-top: 10px; */
+    margin-left: auto;
+    margin-right: auto;
     width: 32px;
     transition: 0.5s;
 }
@@ -655,8 +735,38 @@ button h5{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    }
+
+    #projectAnchor {
+        display: block;
+    }    
+
+    .card1 {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 60%;
+        margin-bottom: 5%;
+    }
+    .card2 {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 60%;
+        margin-bottom: 5%;
+    }
+    .card3 {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 60%;
+        margin-bottom: 5%;
+    }
+    .card4 {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 60%;
+        margin-bottom: 5%;
+    }
 }
-}
+
 
 
 @media (max-width: 992px) {  
@@ -705,9 +815,6 @@ button h5{
         transition: 0.5s;
     }
 
-    /* .blocMap iframe{
-        margin-right: 5%;
-    } */
 
     .bloc1{
         margin-left: auto;
@@ -761,6 +868,15 @@ button h5{
         text-align: justify;
         line-height: 30px; 
     }
+
+    .scrollbar  {
+        display: none;
+    }
+
+    .clickScrollbar {
+        display: none;
+    }
+
 }
 
 
@@ -776,13 +892,20 @@ button h5{
         display: none;
     }
 
-    
-    
 }
 
 @media (max-width: 576px) {
     
-    
+    #favicon {
+        display: none;
+    }
+
+    #titleNavbar {
+        text-align: center;
+        font-size: 25px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
     .skills{
         display: block;
@@ -803,5 +926,25 @@ button h5{
         margin-left: auto;
         margin-right: auto;
         margin-top: 5%;
+    }
+
+}
+
+@media (max-width: 320px) { 
+    #pBanniere img{
+        margin-left: 15%;
+    }
+
+    #titleNavbar {
+        text-align: center;
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 500px) { 
+
+    .CardContent{
+        transform: translateY(60%);
+        padding: 20rem;
     }
 }
