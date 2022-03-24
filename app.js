@@ -67,14 +67,26 @@ window.onclick = function(event) {
   }
 }
 
+
 const txtAnim = document.getElementById('textJs');
 
-new Typewriter(txtAnim, {})
-.typeString('"Bienvenue sur mon CV')
-.pauseFor(300)
-.typeString('<strong>, Dev Web Junior" </strong>')
-.pause(1000)
-.start()
+function txtJS() {
+  new Typewriter(txtAnim, {})
+  .typeString('"Bienvenue sur mon CV')
+  .pauseFor(300)
+  .typeString('<strong>, Dev Web Junior" </strong>')
+  .pause(1000)
+  .start()
+}
+
+txtAnim.style.fontFamily = "Syne Mono"
+txtJS();
+
+setInterval(function(){Element.innerHTML +=
+  txtJS();
+},10000);
+
+
 
 const progressBar = document.querySelector('.scrollbar');
 

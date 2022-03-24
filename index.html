@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Portofolio Dev Web Junior</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Syne+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
 </head>
 <body>
     <div id="anchorLink"></div>
@@ -15,8 +22,7 @@
     <header>
         <div id="navbar">
             <div id="logoTitle">
-                <img id="favicon" src="./img/faviconb.png" alt="">
-                <h1 id="titleNavbar">THEO GUERIN - Developpeur Web </h1>
+                <h1 id="titleNavbar">THEO GUERIN - Developpeur Web (en formation)</h1>
             </div>
             <ul id="navUl">
                 <li><a href="#competenceAnchor">Skills</a></li>
@@ -42,14 +48,14 @@
             </div>
 
             <div id="pBanniere">
-                <p>Âgé de 19 ans, en formation pour devenir développeur web,je suis animé par cette passion d'enfance qu'est le digitale etpar le plaisir de créer des dispositifs utiles pour autrui.
-                    J'ai l'esprit d'équipe, je suis force de propositions et saistravailler en autonomie.
+                <p>Âgé de 19 ans, en formation pour devenir développeur web, je suis animé par cette passion d'enfance qu'est le digitale et par le plaisir de créer des dispositifs utiles pour autrui.
+                    J'ai l'esprit d'équipe, je suis force de propositions et sais travailler en autonomie.
                 </p>
                 <hr>
                 <div id="linkBanniere">   
 
-                    <a href="https://github.com/Eaulmesse" target="blank"><img src="./img/githubb.png" alt=""></a>
-                    <a href="https://www.linkedin.com/in/guerin-theo/" target="blank"><img src="./img/linkedInb.png" alt=""></a>
+                    <div class="tooltip"><a href="https://github.com/Eaulmesse" target="blank"><img src="./img/githubb.png" alt=""> <span class="tooltiptext">Rejoignez mon Github !</span></a></div>
+                    <div class="tooltip"><a href="https://www.linkedin.com/in/guerin-theo/" target="blank"><img src="./img/linkedInb.png" alt=""><span class="tooltiptext">Rejoignez mon LinkedIn !</span></a></div>
                 </div> 
             </div>
             
@@ -58,8 +64,7 @@
         <div id="citation">
             <div id="titleCitation">
                 <h5 id="textJs"></h5>   
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellendus fugiat deleniti deserunt vero aliquid voluptates dolorem odit iusto nulla facere incidunt ipsa, totam quaerat itaque, neque accusantium ex provident?
-                    Voluptate blanditiis rerum cupiditate. Doloremque quaerat, animi hic eligendi omnis distinctio aut totam, quia sed adipisci provident fugit at esse autem accusantium temporibus repudiandae excepturi? Dicta officia deleniti architecto animi.</p>
+                <p id="textCitation">Je suis un dev Junior encore en formation, j'ai en effet effectué une pré-qualification et me prépare à enchaîner sur une formation qualifiante. Le déveppement web est un milieu qui m'interesse depuis longtemps, c'est donc naturellement que je me suis orienté dans ce domaine. Je suis autant attiré par le Freelance que le milieux de l'entreprise et cherche surtout à créer de nouvelles choses et apprendre toujours plus au fil des projets.</p>
             </div>
             <img id="downArrow" src="./img/iconmonstr-arrow-80-240.png" alt="">
         </div>
@@ -73,7 +78,7 @@
                 <div id="myModalJS" class="modalJS">
                     <div class="modal-contentJS">
                         <span class="close">&times;</span>
-                        <p>Some text in the Modal..</p>
+                        <p>J'ai commencé à travailler avec du Javascript au cours de ma préqualification, j'y ai appris les bases et surtout comment s'y retrouver dans l'immense monde qu'est JS. Plusieurs de mes projets intègrent déjà ce language et je ne compte pas m'arrêter la. En effet je compte poursuivre mon apprentissage en utilisant des library comme React. ou Angular JS.</p>
                     </div>
                 </div>
                 
@@ -82,7 +87,7 @@
                 <div id="myModalHTML" class="modalHTML">
                     <div class="modal-contentHTML">
                         <span class="closeHTML">&times;</span>
-                        <p>Some text in the Modal..</p>
+                        <p>Le HTML se trouve être la première chose que j'ai connu durant mon apprentissage, un peu comme tous les dev finalement. Je le maitrise basiquement et suis à 100% capable de m'instruire en auto-didacte en terme d'HTML.</p>
                     </div>
                 </div>  
             </div>
@@ -97,7 +102,7 @@
                 <div id="myModalCSS" class="modalCSS">
                     <div class="modal-contentCSS">
                         <span class="closeCSS">&times;</span>
-                        <p>Some text in the Modal..</p>
+                        <p>Mon apprentissage du CSS est venu en complément de l'HTML, naturellement je ne connais pas tous les recoins de ce language mais suis clairement capable de m'instruire en auto-didacte à son propos au même titre que l'HTML.</p>
                     </div>
                 </div>
                 
@@ -106,7 +111,7 @@
                 <div id="myModalWP" class="modalWP">
                     <div class="modal-contentWP">
                         <span class="closeWP">&times;</span>
-                        <p>Some text in the Modal..</p>
+                        <p>En Travaux ...</p>
                     </div>
                 </div>  
             </div>
@@ -145,7 +150,7 @@
         
                 
                     <p class="cardBody">Site au format SPA, créer lors d'un projet en formation pré-qualifiante. Axé sur le sujet d'un café dans la ville de Lyon. Le site est responsive et fonctionnel.</p>
-                    <a href="" class="button">Acceder</a>
+                    <a href="https://theog.promo-110.codeur.online/SPA-Responsive-1/" target="_blank" class="button">Acceder</a>
                 </div>
             </div>
 
@@ -155,34 +160,11 @@
         
                 
                     <p class="cardBody">Une calculatrice utilisant Javascript pour fonctionner, le système repose sur les prompts et les alerts JS et répond aux calculs classiques qui peuvent lui être demandés.</p>
-                    <a href="" class="button">Acceder</a>
+                    <a href="" target="_blank" class="button">Acceder</a>
                 </div>
             </div>
-                
-                
-                
-               
-               
-
-            </div>
         </div>
-
-
-            <!-- <div class="bloc1">
-                <a href="https://github.com/Eaulmesse/js-numberfinder" target="_blank"><img src="./img/numberfinder.png" alt=""></a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempore ad asperiores cupiditate, veritatis id. Culpa magnam magni nihil repellendus reiciendis quisquam odio laboriosam blanditiis odit totam! Dolorem, quisquam praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius quos porro, in delectus aperiam sunt sed modi! Error et temporibus fugiat earum nam tempore sint repellendus deleniti, corrupti quia.</p>
-                <a href="https://theog.promo-110.codeur.online/SPA-Responsive-1/" target="_blank"><img src="./img/spa.png" alt=""></a>
-            </div>
-
-            <h5 class="left">Projects</h5>
-            <hr class="hrMiddle">
-
-            <div class="bloc1">
-                <a href="https://theog.promo-110.codeur.online/stalkeyes.js/" target="_blank"><img src="./img/eye.png" alt=""></a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempore ad asperiores cupiditate, veritatis id. Culpa magnam magni nihil repellendus reiciendis quisquam odio laboriosam blanditiis odit totam! Dolorem, quisquam praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius quos porro, in delectus aperiam sunt sed modi! Error et temporibus fugiat earum nam tempore sint repellendus deleniti, corrupti quia.</p>
-                <a href="https://theog.promo-110.codeur.online/Difference-game/" target="_blank"><img id="borderDiff" src="./img/difference.png" alt=""></a>
-            </div>     -->
-        </div>
+        
         
 
         <div id="parcoursAnchor" class="sectionSkills">
@@ -267,6 +249,7 @@
                 <a href="#anchorLink"><img id="anchor" src="./img/arrowUp.png" alt=""></a>
                 <a href="https://www.linkedin.com/in/guerin-theo/" target="_blank"><img src="./img/linkedInb.png" alt=""></a>
             </div>
+            <p id="droit">Tout droits reservés.</p>
             <div class="textFooter">
 
             </div>

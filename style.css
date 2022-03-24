@@ -78,8 +78,17 @@ header{
     margin-left: 1%;
     display: inline-block;
     padding-left: 70px;
-    font-size: 40px;
+    font-size: 60px;
+    font-family: 'Teko', sans-serif;
+    transition: 500ms;
 }
+
+#titleNavbar:hover{
+    font-size: 65px;
+    transition: 500ms;
+    color: rgb(95, 98, 255);
+}
+
 
 #navUl{
     display: flex;
@@ -87,7 +96,10 @@ header{
     list-style-type: none;
     margin-top: auto;
     margin-bottom: auto;
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
 }  
+
 
 #navUl li{
     transition: 0.5s;
@@ -105,13 +117,12 @@ li{
 li a{
   color: white;
   text-decoration: none;
+  transition: 500ms;
 }
 
-#favicon{
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 64px;
-    height: 64px;
+li a:hover{
+    color: rgb(95, 98, 255);
+    transition: 500ms;
 }
 
 /* BANNIERE */
@@ -143,7 +154,16 @@ li a{
     width: 100%;
     height: 100%;
     border-radius: 2%;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: 500ms;
 }
+
+#imgBanniere img:hover{
+    filter: grayscale(0);
+    transition: 500ms;
+}
+
 
 #pBanniere{
     width: 60%;
@@ -190,6 +210,7 @@ li a{
 
 #titleCitation p{
     text-align: center;
+    line-height: 2;
 }
 
 #downArrow{
@@ -534,7 +555,7 @@ button h5{
 .cardTitle{
     position: relative;
 }
-px
+
 .cardTitle::after{
     content: "";
     position: absolute;
@@ -568,30 +589,6 @@ px
 
 }
 
-
-/* .bloc1{
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    width: 85%;
-    display: flex;
-    justify-content: center;
-}
-
-.bloc1 img{
-    width: 100%;
-    height: auto;
-} */
-
-/* .bloc1 p{
-    padding: 1%;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 30px;
-    text-align: justify;
-} */
-
 .blocMap{
     padding-top: 5%;
     display: flex;
@@ -603,6 +600,7 @@ px
     padding-left: 10%;
     display: block;
 }
+
 
 .blocText{
     width: 50%;
@@ -719,7 +717,19 @@ px
     transition: 0.5s;
 }
 
+#droit {
+    text-align: center;
+    margin-top: -5%;
+    margin-bottom: 5%;
+}
+
 @media (max-width: 1024px) {  
+
+    #titleNavbar {
+        font-size: 30px;
+    }
+
+
     .blocMap{
         display: block;
     }
@@ -771,11 +781,9 @@ px
 
 @media (max-width: 992px) {  
 
-    #titleNavbar{
-        margin-left: 1%;
-        display: inline-block;
-        padding-left: 70px;
-        font-size: 25px;
+
+    #navUl {
+        display: none;
     }
 
     #logoTitle img{
@@ -880,6 +888,45 @@ px
 }
 
 
+/* TOOLTIP */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
 
 @media (max-width: 768px) { 
     #logoTitle img{
@@ -888,9 +935,6 @@ px
         margin-top: 20px;
     }
 
-    #navUl{
-        display: none;
-    }
 
 }
 
@@ -900,11 +944,8 @@ px
         display: none;
     }
 
-    #titleNavbar {
-        text-align: center;
-        font-size: 25px;
-        padding-left: 5%;
-        padding-right: 5%;
+    #navbar { 
+        display: inline-block;
     }
 
     .skills{
@@ -930,14 +971,18 @@ px
 
 }
 
-@media (max-width: 320px) { 
+@media (max-width: 375px) { 
     #pBanniere img{
         margin-left: 15%;
     }
 
+    #navbar{
+        display: block;
+    }
+
     #titleNavbar {
-        text-align: center;
-        margin-left: 25%;
+        text-align: left;
+        letter-spacing: 2px;
     }
 }
 
